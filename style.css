@@ -1,0 +1,221 @@
+/* importation de la police 'Poppins' de Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
+/* Platyp */
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+   
+ }
+ head{
+   display: flex;
+   align-items: stretch;
+}
+ #avatar{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: black solid 2px;
+}
+ .avatar{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+}
+ header{ 
+   background-image: url('assets/white_fade_background3.jpg');
+   background-size: 150%; 
+   background-position: center;
+   padding: 300px; 
+   display: flex;
+   justify-content: space-around;
+   align-items: center; 
+   gap: 100px;
+}
+
+ ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    color: black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+ }
+ nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    gap: 200px;
+    width: 100%;
+    margin: none;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 60px 16px rgba(0,0,0,0.1);
+    padding-left: 5px;
+    padding-right: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;  
+ }
+ .card {
+   width: 30%; 
+   height: 500px; 
+   display: flex;
+   margin-bottom: 20px;
+   flex-direction: column; 
+   align-items: stretch; 
+   border-radius: 16px;
+   background-color: white;
+   box-shadow: 0px 0px 60px 16px rgba(0,0,0,0.1);
+}
+
+ .card-container{
+    padding: 0 20px 20px;
+    flex: 1;
+ }
+ #image{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    align-items: center;
+    object-fit: cover;
+}
+ #cards {
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: center; 
+   gap: 20px; 
+   border-radius: 10px;
+}
+ .title-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+ h1{
+   margin: 60px 0 60px 0;
+   color: #f22905;
+   text-align: center;
+}
+ h3{
+   color: #f22905;
+   font-size: small;
+}
+ p{
+    display: block;
+    text-align: center;
+}
+ .button.primary{
+    background: #f22905;
+    color: rgb(0, 0, 0);
+    border: 2px solid #f22905;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top: 250px;
+}
+ a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+ a:hover{
+    color: rgb(123, 4, 4);
+}
+ .buttons {
+   border-radius: 4px;
+   text-decoration: none;
+   transition: all 0.3s; /* Animation lors du survol */
+   background: #f22905;
+   color: rgb(0, 0, 0);
+   border: 2px solid #f22905;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: auto; /* Place le bouton en bas de la carte */
+}
+ .buttons:hover {
+   transform: translateY(-10px); /* Animation de déplacement vers le haut */
+}
+ .fixed-whatsapp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 27px;
+}
+.card_review{
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0px 3px 100px 33px rgba(0,0,0,0.1);
+   gap: 20px;
+   padding: 20px;
+   text-align: center;
+   transition: transform 0.3s; /* Animation de transition */
+}
+.card_review:hover {
+   transform: translateX(10px); /* Déplacement de 10px vers la droite au survol */
+}
+.fa-solid .fa-car{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+footer{
+   margin: 80px 0 0 0;
+   display: flex;
+   justify-content: center;
+}
+.review{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-weight: bold;
+   padding: 10px;
+}
+#review_section{
+   font-family: "playtip";
+   font-weight: bold;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap:45px;
+   margin: 45px;
+   box-shadow: 0px 0px 100px 67px rgba(255, 255, 255, 0.1);
+}
+.paragraphe{
+   max-width: 200px;
+}
