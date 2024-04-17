@@ -11,7 +11,7 @@
     <nav>
         <div class="logo">
             <img src="assets/logo.svg" alt="logo MITCH">
-            <h4>MITCH</h4>
+            <h4 id="mitch_nav">MITCH</h4>
         </div>
         <ul>
           <li><a href="#">À Propos</a></li>
@@ -24,45 +24,45 @@
         </ul>
         <div class="avatar">
             <a href="#" class="buttons">Mon Panier</a>
-            <img id="avatar" src="assets/avatar.jpg" alt="avatar">
+            <img id="avatar" src="assets/avatarchimpunks.jpg" alt="avatar">
           </div>
     </nav>
       <header>
-              <a href="#" class="buttons-primary" target="_blank">Nous Contacter</a>
+              <a href="#" id="principal_title" class="buttons-primary" target="_blank">Vivez l'aventure sans limites : Trouvez la voiture parfaite pour votre prochain voyage.</a>
       </header>
       <main>
         <h1>Modèles Disponibles</h1>
         <section id="cards">
           <div class="card">
-            <img id="image" src="https://audi-dunkerque.com/images/modeles/audihd/A1-Audi.png" alt="voiture 1">
+            <img id="image" src="https://cdn.bipicar.com/specificvehicleplans/6225ef47c397f5c90a9654ef/vehicle-images/6364d867b694aff240f97e95_2022_11_04_10_16_23.png" alt="voiture 1">
             <div class="card-container">
               <div class="title-card">
                 <h2>audi</h2>
-                <h3>130€/jour</h3>
+                <h3>599€/mois</h3>
               </div>
-              <p>Maniable et réactive, cette petite citadine est à l’aise en ville comme sur route. Louer une Audi A1 se révèle donc parfait pour accompagner un weekend, des vacances ou un déplacement professionnel.</p>
+              <p>Maniable et réactive, cette petite citadine est à l’aise en ville comme sur route. Louer une Audi A1 grise se révèle donc parfait pour accompagner un weekend, des vacances ou un déplacement professionnel.</p>
               <a href="#" class="buttons">Ajouter au panier</a>
             </div>
           </div>
           <div class="card">
-            <img id="image" src="https://autoexportmarseille.com/wp-content/uploads/2023/03/clio-equilibre-diesel-algerie.png" alt="voiture 2">
+            <img id="image" src="https://cdn.bipicar.com/specificvehicleplans/652932c0cd35bb6b958fa361/vehicle-images/660ff08e1738aa89ada1f22f_2024_04_05_14_37_34.png" alt="voiture 2">
             <div class="card-container">
               <div class="title-card">
-                <h2>renault</h2>
-                <h3>90€/jour</h3>
+                <h2>peugeot</h2>
+                <h3>590€/mois</h3>
               </div>
-              <p>Maniable et réactive, cette petite citadine est à l’aise en ville comme sur route. Louer une Renault Clio se révèle donc parfait pour accompagner un weekend, des vacances ou un déplacement professionnel.</p>
+              <p>Maniable et réactive, cette petite citadine est à l’aise en ville comme sur route. Louer une Peugeot 208cr se révèle donc parfait pour accompagner un weekend, des vacances ou un déplacement professionnel.</p>
               <a href="#" class="buttons">Ajouter au panier</a>
             </div>
           </div>
           <div class="card">
-            <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXrEYlCDja30X93ZWaBzODrNmcGpO1l7jmEQ&s">
+            <img id="image" src="https://cdn.bipicar.com/specificvehicleplans/61e915287ed87e0089207b88/vehicle-images/624375fdf083c82b8ec78596_2022_03_29_23_11_25.png">
             <div class="card-container">
               <div class="title-card">
-                <h2>toyota</h2>
-                <h3>150€/jour</h3>
+                <h2>tesla</h2>
+                <h3>979€/mois</h3>
               </div>
-              <p>Maniable et réactive, cette petite citadine est à l’aise en ville comme sur route. Louer une Toyota Corolla se révèle donc parfait pour accompagner un weekend, des vacances ou un déplacement professionnel.</p>
+              <p>Maniable et réactive, cette petite citadine est à l’aise en ville comme sur route. Louer une Tesla Model Y se révèle donc parfait pour accompagner un weekend, des vacances ou un déplacement professionnel.</p>
               <a href="#" class="buttons">Ajouter au panier</a>
             </div>
           </div>
@@ -71,11 +71,22 @@
             <img src="assets/whatsapp.png" alt="whatsapp">
         </a>
         <h1>NOS VALEURS</h1>
-
-        <h1>AVIS</h1>                                                                                         
-        <section id="review_section">
-        <div class="card_review">
-        <div class="review"> <h4>Ahmed</h4>
+            <section id="valeurs_mod">
+              <div class="valeurs_review">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                 <p>Nous garantissons des véhicules fiables, prêts à répondre à vos besoins, pour une expérience de conduite sereine.</p>
+              </div>
+               <div class="valeurs_review">
+                <i class="fa-solid fa-ear-listen"></i><p>Nous nous engageons à vous offrir un service client irréprochable, à l'écoute de vos besoins pour garantir votre satisfaction.</p>
+              </div>
+               <div class="valeurs_review">
+                <i class="fa-solid fa-handshake"></i>
+              <p>Nous nous engageons à offrir un service client irréprochable, priorisant votre satisfaction.</p>
+            </div>
+            </section>
+        <h1>AVIS</h1>                                 <section id="review_section">
+              <div class="card_review">
+                <div class="review"> <h4>Ahmed</h4>
           <div class="stars_card">
           <i class="fa-solid fa-car"></i> 
           <i class="fa-solid fa-car"></i>
@@ -132,8 +143,21 @@
               </div>
         </section>
         <footer>
-          <p>©MITCH 2024</p>
-        </footer> 
-      </main>
+          <div>
+              <ul>
+                  <li>
+                    <img class="png" src="assets/imagesinsta.png" alt="logo insta">
+                  </li>
+                  <li>
+                      <img class="png" src="assets/tiktok.png" alt="logo tiktok">
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <p>119 Boulevard de la République Paris 75019</p>
+              <p>© 2024 MITCH</p>
+          </div>
+       </footer>
+   </main>
 </body>
 </html>

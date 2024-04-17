@@ -6,37 +6,43 @@
 html, body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-   
- }
- head{
-   display: flex;
-   align-items: stretch;
 }
- #avatar{
+
+#avatar{
     width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 100%;
     border: black solid 2px;
 }
- .avatar{
+
+.avatar{
     display: flex;
     flex-direction: row;
     gap: 18px;
     align-items: center;
 }
- header{ 
-   background-image: url('assets/white_fade_background3.jpg');
-   background-size: 150%; 
-   background-position: center;
-   padding: 300px; 
-   display: flex;
-   justify-content: space-around;
-   align-items: center; 
-   gap: 100px;
+
+header{ 
+    background-image: url('C:\Users\Administrateur\Documents\GitHub\linabtkk.github.io\assets\white_fade_background3.jpg');
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
+    filter: blur(0.5px);
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+    gap: 100px;
 }
 
- ul{
+#principal_title{
+    font-size: 50px;
+    align-items: baseline;
+    display: inline-block;
+    text-align: center;
+}
+ 
+ul{
     display: flex;
     list-style: none;
     align-items: center;
@@ -50,11 +56,12 @@ html, body{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
- }
- nav{
+}
+
+nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     object-fit: cover;
     gap: 200px;
@@ -69,23 +76,35 @@ html, body{
     top: 0;
     left: 0;
     z-index: 10;  
- }
- .card {
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mitch_nav{
+ margin: 15px;
+}
+
+.card {
    width: 30%; 
-   height: 500px; 
+   height: auto; 
    display: flex;
    margin-bottom: 20px;
    flex-direction: column; 
    align-items: stretch; 
    border-radius: 16px;
+   overflow: hidden;
    background-color: white;
    box-shadow: 0px 0px 60px 16px rgba(0,0,0,0.1);
 }
 
- .card-container{
+.card-container{
     padding: 0 20px 20px;
     flex: 1;
- }
+}
+
  #image{
     width: 300px;
     height: auto;
@@ -96,126 +115,169 @@ html, body{
     align-items: center;
     object-fit: cover;
 }
- #cards {
-   display: flex;
-   flex-wrap: wrap; 
-   justify-content: center; 
-   gap: 20px; 
-   border-radius: 10px;
+
+#cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    border-radius: 10px;
 }
- .title-card{
+
+.title-card{
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
 }
- h1{
-   margin: 60px 0 60px 0;
-   color: #f22905;
-   text-align: center;
+
+h1{
+    margin: 60px 0 60px 0;
+    color: #565959;
+    text-align: center;
 }
- h3{
-   color: #f22905;
-   font-size: small;
+
+h3{
+    color:#636169;
+    font-size: small;
 }
- p{
+p{
     display: block;
     text-align: center;
 }
- .button.primary{
-    background: #f22905;
+
+.button.primary{
+    background: #565959;
     color: rgb(0, 0, 0);
-    border: 2px solid #f22905;
+    border: 2px solid #565959;
     text-align: center;
     display: flex;
     align-items: center;
     padding-top: 250px;
 }
- a{
+
+a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
 }
- a:hover{
-    color: rgb(123, 4, 4);
+
+a:hover{
+    color: rgb(255, 0, 0);
 }
- .buttons {
-   border-radius: 4px;
-   text-decoration: none;
-   transition: all 0.3s; /* Animation lors du survol */
-   background: #f22905;
-   color: rgb(0, 0, 0);
-   border: 2px solid #f22905;
-   padding: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: auto; /* Place le bouton en bas de la carte */
+
+.buttons {
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s; 
+    background: #565959;
+    color: rgb(0, 0, 0);
+    border: 2px solid #565959;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; 
 }
- .buttons:hover {
-   transform: translateY(-10px); /* Animation de déplacement vers le haut */
+
+.buttons:hover {
+   transform: scale(0.9); 
 }
- .fixed-whatsapp{
+
+.fixed-whatsapp{
     position:fixed;
     width:60px;
     height:60px;
     bottom:40px;
     right:40px;
-    background-color:#25d366;
+    background-color:#2fba36;
     color:#FFF;
     border-radius:50px;
     text-align:center;
     font-size:30px;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px #13a018;
     z-index:100;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 img{
     width: 27px;
 }
+
 .card_review{
-   display: flex;
-   flex-direction: column;
-   box-shadow: 0px 3px 100px 33px rgba(0,0,0,0.1);
-   gap: 20px;
-   padding: 20px;
-   text-align: center;
-   transition: transform 0.3s; /* Animation de transition */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 100px 33px rgba(0,0,0,0.1);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s; 
+    border-radius: 30px;
 }
+
 .card_review:hover {
-   transform: translateX(10px); /* Déplacement de 10px vers la droite au survol */
+    transform: scale(1.2); 
 }
+
 .fa-solid .fa-car{
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
+    size-adjust: 300px;
 }
+
 footer{
-   margin: 80px 0 0 0;
-   display: flex;
-   justify-content: center;
+    margin: 80px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.53);
 }
+
 .review{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   font-weight: bold;
-   padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 10px;
 }
+
 #review_section{
-   font-family: "playtip";
-   font-weight: bold;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap:45px;
-   margin: 45px;
-   box-shadow: 0px 0px 100px 67px rgba(255, 255, 255, 0.1);
+    font-family: "playtip";
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:45px;
+    margin: 45px;
+    box-shadow: 0px 0px 100px 67px rgba(255, 255, 255, 0.1);
 }
+
 .paragraphe{
    max-width: 200px;
+}
+
+#valeurs_mod{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;  
+}
+
+.valeurs_review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-solid{
+    display: flex;
+    text-align: center;
+}
+
+.valeurs_review i{
+    font-size: 75px;
 }
