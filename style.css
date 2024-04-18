@@ -229,6 +229,14 @@ img{
     size-adjust: 300px;
 }
 
+#avatar_avis{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: black solid 2px;
+}
+
 footer{
     margin: 80px 0 0 0;
     display: flex;
