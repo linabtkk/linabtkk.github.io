@@ -15,9 +15,10 @@
       </div>
         <ul>
           <li><a href="#">À Propos</a></li>
-          <li><a href="#Modèles Disponibles">Modèles Disponibles</a></li>
-          <li><a href="#Nos Valeurs"> Nos Valeurs</a></li>
+          <li><a href="#Modèles Disponibles">Modèles</a></li>
+          <li><a href="#Nos Valeurs">Valeurs</a></li>
           <li><a href="#Avis">Avis</a></li>
+          <li><a href="#Nous Contacter">Contact</a></li>
         </ul>
       <div class="avatar">
             <a href="#" class="buttons">Mon Panier</a>
@@ -155,18 +156,43 @@
     <a href="#" class="fixed-whatsapp " target="_blank">
     <img src="assets/whatsapp.png" alt="whatsapp">
     </a>
-  <footer>
-        <div>
+  <h1 id="Nous contacter">Nous Contacter</h1>
+<section id="contact">
+    <form action="/contact_page" method="post">
+  <h4 class="h2_contact">Nous contacter</h4>
+        <div class="div_contact" id="Contact">
+          <label for="Nom">Nom...........&nbsp;:</label>
+          <input type="text" id="Nom" name="utilisateur_nom">
+        </div>
+        <div class="div_prénom">
+          <label for="prénom">Prénom...&nbsp;:</label>
+          <input type="text" id="prénom" name="user_prénom">
+        </div>
+        <div class="div_mail">
+          <label for="mail">E-mail......&nbsp;:</label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+        <div class="div_msg">
+          <label for="msg">Message&nbsp;:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="contact_button">
+        <button class="b_cart" type="submit">Envoyer le message</button>
+      </div>
+  </form>
+</section>
+<footer>
+      <div>
           <ul>
             <li><img class="png" src="assets/imagesinsta.png" alt="logo insta"></li>
             <li><img class="png" src="assets/tiktok.png" alt="logo tiktok"></li>
           </ul>
-        </div>
-        <div>
+      </div>
+      <div>
               <p>119 Boulevard de la République Paris 75011</p>
               <p>© 2024 MITCH</p>
-        </div>
-  </footer>
-  </main>
+      </div>
+</footer>
+</main>
 </body>
 </html>

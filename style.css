@@ -140,6 +140,7 @@ h3{
     color:#636169;
     font-size: small;
 }
+
 p{
     display: block;
     text-align: center;
@@ -288,3 +289,50 @@ footer{
 .valeurs_review i{
     font-size: 75px;
 }
+
+h4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#contact {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    border: 10px solid #ccc;
+}
+  
+form {
+    width: 100%;
+}
+  
+.div_contact,
+.div_prénom,
+.div_mail,
+.div_msg {
+    margin-bottom: 20px; 
+}
+  
+.contact_button{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    display: inline-block;
+    width: 120px;
+}
+  
+.input {
+    width: calc(100% - 140px);
+}
+  
+textarea {
+    width: calc(100% - 140px);
+    height: 100px;
+}
+  
